@@ -1,12 +1,11 @@
 ### Why
-kubernetes can run thousands of find/du/ip processes on kubernetes cluster
-these processes are visible in atop, but cmdline is not available
-
+Kubernetes can run thousands of find/du/ip short-live processes(mostly exec.command liveness probes) on kubernetes node.  
+These processes are visible in atop, but cmdline is not available as procfs records are gone soon.
 
 ### Usage
 
-findexit.py -- display cmdline of all finished processes
-findit.py   -- display cmdline by regexp
+- findexit.py -- display cmdline of all finished processes
+- findit.py   -- display cmdline by regexp
 
 procfs polled with 100ms interval
 
